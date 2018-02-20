@@ -1,0 +1,62 @@
+.valid {
+    border: 1px solid blue;
+ }
+ 
+ .invalid {
+    border: 1px solid red;
+ }
+
+ .signup {
+    font-size: 40px;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup2 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+ /* Split the screen in half */
+ .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #111;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: white;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+ 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }

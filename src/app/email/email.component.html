@@ -1,0 +1,49 @@
+
+
+
+<div class="split left">
+  <div class="centered">
+    <img src="img_avatar2.png" alt="Avatar woman">
+    <h2>Jane Flex</h2>
+    <p>Some text.</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div class="form-container">
+  
+      <a routerLink="/login" id="goback">Go back</a>
+      <h2 id="h2">Custom Login</h2>
+    
+      <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span> 
+      
+      <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+     
+        <input #myLabelEmail type="text" (keyup)="checkEmail(formData)" placeholder="Email address.." [(ngModel)]="email" name="email" class="txt" required>
+        <input #myLabelPass type="password" (keyup)="checkPass(formData)" placeholder="Password" [(ngModel)]="password" name="password" class="txt" required>
+        <div *ngIf="passgood == false && typed1forpass == true" class="info">Password must be at least 6 characters..</div >
+    
+        <button type="submit" class="basic-btn">Log in...</button>
+
+      </form> 
+        <a routerLink="/reset" class="alc">Reset My Password!</a> 
+   
+        <button (click)="loginFb()" id="fb">Login With Facebook</button><br>
+        <button (click)="loginGoogle()" id="google">Login With Google</button> 
+      
+        <a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
+ 
+    </div>
+  
+ 
+  </div>
+</div>
+
+
+
+
+      
+      
+
+   
